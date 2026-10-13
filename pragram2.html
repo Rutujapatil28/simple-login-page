@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Attractive Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fc;
+            color: #222;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #ffffff;
+            box-shadow: 0 2px 10px #ddd;
+        }
+
+        nav h2 {
+            color: #6c4cff;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #6c4cff;
+        }
+
+        /* Home Section */
+        .hero {
+            min-height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+            background: linear-gradient(135deg, #6c4cff, #00bcd4);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: white;
+            color: #6c4cff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #222;
+            color: white;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #6c4cff;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #ddd;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #6c4cff;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 5px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>MyWebsite</h2>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Welcome to My Website</h1>
+        <p>Explore new ideas, discover amazing services, and grow with us.</p>
+        <a href="#services" class="btn">Explore More</a>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🌐 Web Design</h3>
+                <p>Beautiful and modern website designs for your needs.</p>
+            </div>
+
+            <div class="card">
+                <h3>💻 Development</h3>
+                <p>Fast, responsive, and user-friendly websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>🚀 Digital Growth</h3>
+                <p>Creative solutions to help your business grow online.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="about">
+        <h2>About Us</h2>
+        <p>We create simple, creative, and attractive digital experiences.</p>
+    </section>
+
+    <section class="services" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: hello@mywebsite.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MyWebsite. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
